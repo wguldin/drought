@@ -13,18 +13,12 @@
 
             <td><a href="{% url detail c.rowid %}">{{ c.rowid }}</a></td>
             <td>{{ d.date }}</td>
-            <td>{{ d.nothing}}</td>
-            <td>{{ d. }}</td>
-
-
-                rowid = models.CharField(max_length=12, primary_key=True)
-    date = models.DateField(blank=True, null=True)
-    nothing = models.FloatField(blank=True, null=True)
-    D0D4 = models.FloatField(blank=True, null=True)
-    D1D4 = models.FloatField(blank=True, null=True)
-    D2D4 = models.FloatField(blank=True, null=True)
-    D3D4 = models.FloatField(blank=True, null=True)
-    D4 = models.FloatField(blank=True, null=True)
+            <td>{{ d.nothing }}</td>
+            <td>{{ d.d0d4 }}</td>
+            <td>{{ d.d1dd4 }}</td>
+            <td>{{ d.d2d4 }}</td>
+            <td>{{ d.d3d4 }}</td>
+            <td>{{ d.d4 }}</td>
 
         </tr>
     {% endfor %}
