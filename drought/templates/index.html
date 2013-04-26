@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Recent police dispatches in Columbia{% endblock %}
+
+{% block content %}
+
+    <h1>List of drought levels by week for last 10 years</h1>
+
+    <table>
+
+    {% for d in drought %}
+        <tr>
+
+            <td><a href="{% url detail c.rowid %}">{{ c.rowid }}</a></td>
+            <td>{{ d.date }}</td>
+            <td>{{ d.nothing}}</td>
+            <td>{{ d. }}</td>
+
+
+                rowid = models.CharField(max_length=12, primary_key=True)
+    date = models.DateField(blank=True, null=True)
+    nothing = models.FloatField(blank=True, null=True)
+    D0D4 = models.FloatField(blank=True, null=True)
+    D1D4 = models.FloatField(blank=True, null=True)
+    D2D4 = models.FloatField(blank=True, null=True)
+    D3D4 = models.FloatField(blank=True, null=True)
+    D4 = models.FloatField(blank=True, null=True)
+
+        </tr>
+    {% endfor %}
+
+    </ul>
+
+{% endblock %}
