@@ -1,12 +1,9 @@
 from django.db import models
-from gcharts import GChartsManager
 
 class Drought(models.Model):
 
-	objects = models.Manager()
-	gcharts = GChartsManager()
 	rowid = models.CharField(max_length=12, primary_key=True)
-	date = models.DateField(blank=True, null=True)
+	date = models.DateTimeField(blank=True, null=True)
 	none = models.FloatField(blank=True, null=True)
 	D0D4 = models.FloatField(blank=True, null=True)
 	D1D4 = models.FloatField(blank=True, null=True)
